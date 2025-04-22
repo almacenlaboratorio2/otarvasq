@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario y Tabla</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Formulario de Ingreso</h1>
+    <form id="dataForm">
+        <label for="codigo">Codigo:</label>
+        <input type="text" id="codigo" required>
+        
+        <label for="producto">Producto:</label>
+        <input type="text" id="producto" required>
+        
+        <label for="lote">Número de Lote:</label>
+        <input type="text" id="lote" required>
+
+        <label for="analisis">Número de Análisis:</label>
+        <input type="text" id="analisis" required>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="text" id="cantidad" required>
+
+        <label for="medida">Unidad de medida:</label>
+        <input type="text" id="medida" required>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" required>
+
+        <label for="proveedor">Proveedor:</label>
+        <input type="text" id="proveedor" required>
+        
+        <button type="submit">Grabar</button>
+    </form>
+
+    <h2>Datos Ingresados</h2>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Codigo</th>
+                <th>Producto</th>
+                <th>Numero de lote</th>
+                <th>Numero de analisis</th>
+                <th>Cantidad</th>
+                <th>Unidad de medida</th>
+                <th>Fecha</th>
+                <th>Proveedor</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Los datos se agregarán aquí -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
